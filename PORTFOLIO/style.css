@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family:'Poppins', sans-serif;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(17, 17, 68);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav ul li a:hover{
+    color:rgb(153, 153, 226);
+    font-size: 1.01rem;
+}
+main hr{
+    border: 0;
+    height: 1.2px;
+    background: #9c97f1;
+    margin: 40px 84px;
+}
+
+.left{
+    font-size: 1.5rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+.firstSection > div{
+    width: 30%;
+}
+.leftSection{
+    font-size: 2rem;
+  
+}
+.leftSection.buttons{
+  padding: 60px 0;
+}
+.leftSection .btn{
+    padding: 15px;
+    background-color: royalblue;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.rightSection img{
+    width: 80%; 
+}
+.purple{
+    color: rgb(125, 65, 180);
+}
+.lavender{
+    color:rgb(122, 215, 243);
+}
+#element{
+    color: rgb(150, 223, 245);
+}
+/* About Section Styling */
+section{
+    padding-top: 40px;
+  }
+  section .content{
+    width: 80%;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  .about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  section .title span{
+    color: #8ecaf0;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+  }
+  section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #8095dd;
+  left: 0;
+  bottom: 0;
+}
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about .about-details .left{
+  width: 45%;
+}
+.about .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.about-details .right{
+  width: 55%;
+}
+section  .topic{
+  color: #0E2431;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.about-details .right p{
+  text-align: justify;
+  color: #d2c4f3;
+}
+/* Skill Section Styling */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #12172b;
+  color: white;
+}
+
+h1{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+  color:#8ecaf0;
+}
+.skills-area{
+  display: flex;
+  flex-direction: column;
+  padding: 0 20%;
+}
+
+.skill{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.skill-title{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.skill-bar{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  height: 40px;
+  z-index: -1;
+  border-radius: 100px;
+  position: absolute;
+}
+.skill-fill{
+  background: rgb(31, 45, 238);
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+  overflow: hidden;
+}
+
+.skill-percent{
+  font-size: 20px;
+}
+
+.html{
+  animation: html 2s;
+  width: 95%;
+}
+
+.css{
+  animation: css 2s;
+  width: 70%;
+}
+
+.js{
+  animation: js 2s;
+  width: 50%;
+}
+
+@keyframes html {
+  from{
+    width: 0;
+  }
+  to{
+    width: 95%;
+  }
+}
+
+@keyframes css {
+  from{
+    width: 0;
+  }
+  to{
+    width: 70%;
+  }
+}
+
+@keyframes js {
+  from{
+    width: 0;
+  }
+  to{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width:750px){
+  .skills-area{
+    padding: 0 5%;
+  }
+}
+/* contact Section Styling */
+section{
+  padding-top: 40px;
+}
+section .content{
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+h2{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+  color:#8ecaf0;
+}
+.contact form {
+  width: 66%;
+  margin: 20px auto;
+}
+.contact input,
+textarea {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #a1a1a1;
+}
+.contact textarea {
+  height: 80px;
+}
+.contact button {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+  height: 40px;
+  padding: 10px;
+  background: #07b18c;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+.contactinfo .info {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contact{
+  background: var(--second-bg-color); 
+  display: grid; 
+  grid-template-columns: repeat (2, 1fr); 
+  align-items: center;
+  gap: 2.5rem; 
+  }
+    
+.list{
+  margin-bottom: 2.8rem;
+  text-align: center;
+  } 
+.list li{
+  text-align: center;
+  }
+.list li a {
+    display: block;
+    color: var(--second-color); 
+    font-size: 14px; 
+    transition: all .45s ease;
+  }
+  .list .info{
+    font-size: 25px;
+    text-align: center;
+    color: #8095dd;
+  }
+
+/****FOOTER SECTION****/
+.footer {
+	background-color: #986fe6;
+	padding: 30px 0px 40px 0px;
+	width: 100%;
+	float: left;
+}
+.footer-sect {
+	color: #050505;
+}
+.footer-sect a {
+  color: #b3b3b3;
+	margin-left: 10px;
+	text-decoration: none;
+	font-size: 18px;
+	text-align: center;
+}
+.social-icon a i {
+	width: 50px;
+	height: 40px;
+  border: 1px solid #fff;
+	line-height: 80px;
+	font-size: 20px;
+	border-radius: 20%;
+}
